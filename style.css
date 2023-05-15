@@ -388,7 +388,7 @@ footer .redes a{
     }
 
     .fondo__tarjeta{
-        width: 380px;
+        width: 355px;
         height: 570px;
     }
     
@@ -399,7 +399,7 @@ footer .redes a{
         height: 335px;
         position: absolute;
         top: 20px;
-        left: 20px;
+        left: 10px;
     }
 
     .tarjeta img{
