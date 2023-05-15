@@ -310,7 +310,6 @@ footer{
 /* NAV PUBLICIDAD */
 nav{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color: gainsboro;
     padding: 20px 0px;
@@ -326,6 +325,8 @@ nav{
 .marcas li{
     list-style-type: none;
     padding: 7px 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* FOOTER */
@@ -379,20 +380,31 @@ footer .redes a{
         background-image: url(./imagenes/Capital_Dia2_01.jpg);
         background-size: cover;
     }
-    
+
+    header{ 
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0px 15px 0px;
+    }
+
     .fondo__tarjeta{
-        width: 480px;
-        height: 720px;
+        width: 380px;
+        height: 570px;
     }
     
     .tarjeta{
         display: flex;
         flex-direction: column;
-        width: 400px;
-        height: 400px;
+        width: 335px;
+        height: 335px;
         position: absolute;
-        top: 50px;
-        left: 40px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .tarjeta img{
+        height: 335px;
+        width: 335px;
     }
     
     .tarjeta__contenido{
@@ -403,10 +415,18 @@ footer .redes a{
         text-align: center;
         padding-left: 0px;
     }
+
+    .tarjeta__contenido p{
+        font-size: 16;
+    }
+
+    .tarjeta__contenido h2{
+        font-size: 24;
+    }
     
     .contenedor__imagenes figure{
-        height: 300px;
-        width: 450px;
+        height: 200px;
+        width: 300px;
     }
 
     #main__presentacion{
@@ -414,6 +434,7 @@ footer .redes a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     
     .nosotros__fotografos{
@@ -428,14 +449,21 @@ footer .redes a{
     }
     
     .contenedor__imagenes figure:hover > .capa h3{
-        font-size: 30px;
-    }
-    .contenedor__imagenes figure .capa p{
         font-size: 20px;
+        margin-top: 50px;
+    }
+    
+    .contenedor__imagenes figure .capa p{
+        font-size: 12px;
+    }
+
+    #contenido__videos{
+        padding: 30px;
     }
 
     #contenido__videos iframe{
-        height: 300px;
+        height: 100%;
+        width: 70%;
     }
 
     .form{
@@ -449,15 +477,36 @@ footer .redes a{
         margin-right: 10px;   
     }
 
-    .marcas{
-        padding: 0;
+    nav{
+        padding: 0px;
     }
 
-    .marcas li{
+    nav .marcas{
+        flex-wrap: wrap;
+        padding: 0;
+        width: 70%;
+        height: 70%;
+
+    }
+
+    nav .marcas li{
         padding: 5px 5px;
     }
 
-    .whatsapp{
+    footer{
+        flex-direction: column;
+    }
+
+    footer .copiright{
+        padding-top: 15px;
+        padding-left: 0px;
+    }
+
+    footer .redes{
+        padding-left: 20px;
+    }
+
+    footer .whatsapp{
         visibility: hidden;
     }
 }
