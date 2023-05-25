@@ -1,0 +1,19 @@
+// Bassics
+@import './basics/_colors';
+@import './basics/_reset';
+@import './basics/_typography';
+
+
+// Layouts
+@import './layouts/footer.scss';
+@import './layouts/header.scss';
+@import './layouts/main.scss';
+@import './layouts/mobile.scss';
+@import './layouts/nav.scss';
+
+
+// Pages
+@import './pages/contacto.scss';
+@import './pages/fotos.scss';
+@import './pages/nosotros.scss';
+@import './pages/videos.scss';

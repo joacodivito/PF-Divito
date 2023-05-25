@@ -1,0 +1,33 @@
+footer{
+    width: 100%;
+    grid-area: footer;
+    background-color: $color-terciario;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .copiright{
+        font-size: 15px;
+        padding-left: 15px;
+        margin: 0;
+    }
+    .redes{
+        list-style-type: none; 
+        margin: 0;  
+        a{
+            text-decoration: none; 
+            color: $color-primario;
+        }
+    }
+    .whatsapp{
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+

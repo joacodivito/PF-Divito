@@ -1,0 +1,148 @@
+@media (max-width: 576px){ 
+    body{
+        grid-template-rows: 80px auto 80px 210px;
+    }
+
+    header{ 
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0px 15px 0px;
+        position: static;
+    }
+    
+    main{
+        #hero2{
+            background-image: url(../imagenes/Alan_Sutton_4.jpg);
+            background-size: cover;
+        }
+        
+        #hero3{
+            background-image: url(../imagenes/Conociendo_Rusia_03.jpg);
+            background-size: cover;
+        }
+        
+        #hero4{
+            background-image: url(../imagenes/Capital_Dia2_03.jpg);
+            background-size: cover;
+        }
+        
+        #hero5{
+            background-image: url(../imagenes/Capital_Dia2_01.jpg);
+            background-size: cover;
+        }
+
+        .secciones{
+            .fondo__tarjeta{
+                width: 355px;
+                height: 570px;
+                .tarjeta{
+                    flex-direction: column;
+                    width: 335px;
+                    height: 335px;
+                    top: 20px;
+                    left: 10px;
+                    img{
+                        height: 335px;
+                        width: 335px;
+                    }
+                    .tarjeta__contenido{
+                        align-items: center;
+                        text-align: center;
+                        padding-left: 0px;
+                        h2{
+                            font-size: 24;
+                        }
+                        p{
+                            font-size: 16;
+                        }
+                    }
+                }
+            }
+        }
+        
+        #fondo{
+            .contenedor__imagenes{ 
+                figure{
+                    height: 200px;
+                    width: 300px;
+                }
+            }
+            .nosotros{
+                font-size: 16px;
+            }
+            .nosotros__fotografos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .card{
+                    width: 100%;
+                    margin: 15px;
+                }
+            }
+        }
+
+        #main__presentacion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .contenedor__imagenes figure:hover > .capa h3{
+            font-size: 20px;
+            margin-top: 70px;
+        }
+        
+        .contenedor__imagenes figure .capa p{
+            font-size: 12px;
+        }
+
+        #contenido__videos{
+            padding: 30px;
+            iframe{
+                height: 100%;
+                width: 70%;
+            }
+        }
+
+        
+
+        .form{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            #formulario{
+                width: 100%;
+                margin-right: 10px;   
+            }
+        }
+    }
+
+    nav{
+        padding: 0px;
+        .marcas{
+            flex-direction: row;
+            flex-wrap: wrap;
+            li{
+                margin: 0;
+                img{
+                    margin-left: 4px ;                
+                }
+            }
+        }
+    }    
+    
+    footer{
+        flex-direction: column;
+        .copiright{
+            padding-top: 15px;
+            padding-left: 0px;
+        }
+        .redes{
+            padding-left: 40px;
+            padding-top: 15px;
+        }
+    }
+}

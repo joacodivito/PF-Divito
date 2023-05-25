@@ -1,0 +1,126 @@
+@media (max-width: 576px) {
+  body {
+    grid-template-rows: 80px auto 80px 210px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+    position: static;
+  }
+  main #hero2 {
+    background-image: url(../imagenes/Alan_Sutton_4.jpg);
+    background-size: cover;
+  }
+  main #hero3 {
+    background-image: url(../imagenes/Conociendo_Rusia_03.jpg);
+    background-size: cover;
+  }
+  main #hero4 {
+    background-image: url(../imagenes/Capital_Dia2_03.jpg);
+    background-size: cover;
+  }
+  main #hero5 {
+    background-image: url(../imagenes/Capital_Dia2_01.jpg);
+    background-size: cover;
+  }
+  main .secciones .fondo__tarjeta {
+    width: 355px;
+    height: 570px;
+  }
+  main .secciones .fondo__tarjeta .tarjeta {
+    flex-direction: column;
+    width: 335px;
+    height: 335px;
+    top: 20px;
+    left: 10px;
+  }
+  main .secciones .fondo__tarjeta .tarjeta img {
+    height: 335px;
+    width: 335px;
+  }
+  main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido {
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+  }
+  main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido h2 {
+    font-size: 24;
+  }
+  main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido p {
+    font-size: 16;
+  }
+  main #fondo .contenedor__imagenes figure {
+    height: 200px;
+    width: 300px;
+  }
+  main #fondo .nosotros {
+    font-size: 16px;
+  }
+  main #fondo .nosotros__fotografos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  main #fondo .nosotros__fotografos .card {
+    width: 100%;
+    margin: 15px;
+  }
+  main #main__presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main .contenedor__imagenes figure:hover > .capa h3 {
+    font-size: 20px;
+    margin-top: 70px;
+  }
+  main .contenedor__imagenes figure .capa p {
+    font-size: 12px;
+  }
+  main #contenido__videos {
+    padding: 30px;
+  }
+  main #contenido__videos iframe {
+    height: 100%;
+    width: 70%;
+  }
+  main .form {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  main .form #formulario {
+    width: 100%;
+    margin-right: 10px;
+  }
+  nav {
+    padding: 0px;
+  }
+  nav .marcas {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav .marcas li {
+    margin: 0;
+  }
+  nav .marcas li img {
+    margin-left: 4px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .copiright {
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+  footer .redes {
+    padding-left: 40px;
+    padding-top: 15px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,28 @@
+#hero3 {
+  background-image: url(../imagenes/Ca7riel_Opera_1.jpg);
+  width: 100%;
+  height: 700px;
+  background-position: top;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+.form #formulario {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.form #formulario input {
+  padding: 5px;
+  margin: 5px;
+}
+.form #formulario textarea {
+  padding: 5px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=contacto.css.map */

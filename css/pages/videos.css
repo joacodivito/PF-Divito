@@ -1,0 +1,21 @@
+#hero5 {
+  background-image: url(../imagenes/La_Renga_11.jpg);
+  width: 100%;
+  height: 700px;
+  background-position: center;
+}
+
+#contenido__videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 20px;
+}
+#contenido__videos iframe {
+  padding: 15px 15px;
+  border: 1px solid #484848;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=videos.css.map */
