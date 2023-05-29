@@ -6,7 +6,7 @@
 
 body{
     background-color: black;
-    color: white;
+    color: map-get($colores, primario);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 80px auto 80px 120px;

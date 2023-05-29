@@ -42,7 +42,7 @@
                 opacity: 1;
             }
             h3{
-                color: #fff;
+                color: map-get($colores, primario);
                 font-weight: 400;
                 margin-bottom: 120px;
                 transition: all 500ms ease-out;
@@ -53,7 +53,7 @@
                 }
             }           
             p{
-                color: #fff;
+                color: map-get($colores, primario);
                 font-size: 15px;
                 line-height: 1.5;
             }

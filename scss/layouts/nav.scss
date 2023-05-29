@@ -1,7 +1,7 @@
 nav{
     padding-top: 25px;
     grid-area: nav;
-    background-color: $color-secundario;
+    background-color: map-get($colores, secundario);
     width: 100%;
     .marcas{
         display: flex;

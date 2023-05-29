@@ -45,6 +45,7 @@
     padding-left: 0px;
   }
   main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido h2 {
+    padding-top: 5px;
     font-size: 24;
   }
   main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido p {
@@ -85,8 +86,8 @@
     padding: 30px;
   }
   main #contenido__videos iframe {
-    height: 100%;
-    width: 70%;
+    width: 100%;
+    height: auto;
   }
   main .form {
     flex-direction: column;
@@ -97,12 +98,11 @@
     width: 100%;
     margin-right: 10px;
   }
-  nav {
-    padding: 0px;
-  }
   nav .marcas {
+    margin-top: -12px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
   nav .marcas li {
     margin: 0;

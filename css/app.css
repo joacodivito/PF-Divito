@@ -149,6 +149,9 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a {
   border: 1px solid black;
   font-size: 20;
 }
+main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a:hover {
+  color: gainsboro;
+}
 
 @media (max-width: 576px) {
   body {
@@ -197,6 +200,7 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a {
     padding-left: 0px;
   }
   main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido h2 {
+    padding-top: 5px;
     font-size: 24;
   }
   main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido p {
@@ -237,8 +241,8 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a {
     padding: 30px;
   }
   main #contenido__videos iframe {
-    height: 100%;
-    width: 70%;
+    width: 100%;
+    height: auto;
   }
   main .form {
     flex-direction: column;
@@ -249,12 +253,11 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a {
     width: 100%;
     margin-right: 10px;
   }
-  nav {
-    padding: 0px;
-  }
   nav .marcas {
+    margin-top: -12px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
   nav .marcas li {
     margin: 0;
@@ -363,7 +366,7 @@ nav .marcas li {
   opacity: 1;
 }
 .contenedor__imagenes figure .capa h3 {
-  color: #fff;
+  color: white;
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 500ms ease-out;
@@ -374,7 +377,7 @@ nav .marcas li {
   margin-bottom: 15px;
 }
 .contenedor__imagenes figure .capa p {
-  color: #fff;
+  color: white;
   font-size: 15px;
   line-height: 1.5;
 }

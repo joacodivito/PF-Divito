@@ -23,8 +23,8 @@ main{
         padding-top: 80px;
         align-items: center;
         .fondo__tarjeta{
-            background-color: $color-secundario;
-            border: 2px solid $color-primario;
+            background-color: map-get($colores, secundario);
+            border: 2px solid map-get($colores, primario);
             border-radius: 3px;
             width: 720px;
             height: 525px;
@@ -38,11 +38,11 @@ main{
                 flex-direction: row;
                 width: 900px;
                 height: 400px;
-                background-color: $color-secundario;
+                background-color: map-get($colores, secundario);
                 position: absolute;
                 left: -190px;
                 img{
-                    border: 1px solid $color-primario;
+                    border: 1px solid map-get($colores, primario);
                 }
                 .tarjeta__contenido{
                     display: flex;
@@ -61,13 +61,16 @@ main{
                         font-size: 20;
                     }
                     a{
-                        color: $color-primario;
-                        background-color: $color-terciario;
+                        color: map-get($colores, primario);
+                        background-color: map-get($colores, terciario);
                         border-radius: 4px;
                         padding: 8px 20px;
                         text-decoration: none;
                         border: 1px solid black;
-                        font-size: 20;   
+                        font-size: 20;
+                        &:hover{
+                            color: map-get($colores, secundario);
+                        }   
                     }                    
                 } 
             }
