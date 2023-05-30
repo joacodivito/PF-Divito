@@ -65,8 +65,7 @@
     text-align: center;
   }
   main #fondo .nosotros__fotografos .card {
-    width: 100%;
-    margin: 15px;
+    margin: 10px;
   }
   main #main__presentacion {
     display: flex;
@@ -99,7 +98,7 @@
     margin-right: 10px;
   }
   nav .marcas {
-    margin-top: -12px;
+    margin-top: -20px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;

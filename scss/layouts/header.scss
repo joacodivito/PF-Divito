@@ -2,12 +2,9 @@ header{
     width: 100%;
     grid-area: header;
     background-color: map-get($colores, terciario);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flexbox(row, space-between, center);
     padding: 15px;
     position: fixed;
-    align-items: center;
     z-index: 100;
     .header__titulo{
         padding: 1px 10px;
@@ -18,8 +15,7 @@ header{
     }
     .header__menu{
         list-style-type: none;
-        display: flex;
-        flex-direction: row;
+        @include flexbox(row, none, none);
         padding: 0px 15px;
         color: map-get($colores, primario);
         a{

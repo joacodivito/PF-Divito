@@ -48,9 +48,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
   position: fixed;
-  align-items: center;
   z-index: 100;
 }
 header .header__titulo {
@@ -64,6 +64,8 @@ header .header__menu {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: none;
+  align-items: none;
   padding: 0px 15px;
   color: white;
 }
@@ -89,15 +91,15 @@ main #main__presentacion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 25px;
   align-items: center;
+  padding: 25px;
 }
 main .secciones {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 80px;
   align-items: center;
+  padding-top: 80px;
 }
 main .secciones .fondo__tarjeta {
   background-color: gainsboro;
@@ -109,11 +111,14 @@ main .secciones .fondo__tarjeta {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: none;
   margin-bottom: 80px;
 }
 main .secciones .fondo__tarjeta .tarjeta {
   display: flex;
   flex-direction: row;
+  justify-content: none;
+  align-items: none;
   width: 900px;
   height: 400px;
   background-color: gainsboro;
@@ -151,6 +156,7 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a {
 }
 main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a:hover {
   color: gainsboro;
+  border: 1px solid white;
 }
 
 @media (max-width: 576px) {
@@ -220,8 +226,7 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a:hover {
     text-align: center;
   }
   main #fondo .nosotros__fotografos .card {
-    width: 100%;
-    margin: 15px;
+    margin: 10px;
   }
   main #main__presentacion {
     display: flex;
@@ -254,7 +259,7 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a:hover {
     margin-right: 10px;
   }
   nav .marcas {
-    margin-top: -12px;
+    margin-top: -20px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -285,10 +290,11 @@ nav {
 }
 nav .marcas {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 nav .marcas li {
-  align-items: center;
   list-style-type: none;
 }
 
@@ -303,11 +309,14 @@ nav .marcas li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: none;
   padding: 15px;
 }
 .form #formulario {
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
   width: 50%;
 }
 .form #formulario input {
@@ -328,9 +337,10 @@ nav .marcas li {
 
 .contenedor__imagenes {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 30px 0px 30px 0px;
 }
 .contenedor__imagenes figure {
@@ -403,19 +413,18 @@ nav .marcas li {
 }
 
 .nosotros {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 40px 35px 20px 35px;
   text-align: center;
   font-size: 20px;
 }
 
 .nosotros__fotografos {
-  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: none;
   padding: 15px 0px 50px 0px;
   text-align: center;
-  width: 70%;
 }
 .nosotros__fotografos .card-body {
   background-color: gainsboro;
@@ -431,8 +440,9 @@ nav .marcas li {
 #contenido__videos {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: none;
+  flex-wrap: wrap;
   padding: 80px 20px;
 }
 #contenido__videos iframe {

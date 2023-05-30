@@ -1,9 +1,11 @@
+//RESET
 *{
     font-family: 'Poppins'; 
     margin: 0;
     padding: 0;
 } 
 
+//GRID
 body{
     background-color: black;
     color: map-get($colores, primario);
@@ -15,4 +17,12 @@ body{
         "main main main main main main"
         "nav nav nav nav nav nav" 
         "footer footer footer footer footer footer" 
+}
+
+// Mixins
+@mixin flexbox($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }

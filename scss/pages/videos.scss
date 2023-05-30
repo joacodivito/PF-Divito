@@ -6,10 +6,8 @@
 }
 
 #contenido__videos{
-    display: flex;
-    flex-direction: row;
+    @include flexbox(row, center,none);
     flex-wrap: wrap;
-    justify-content: center;
     padding: 80px 20px;
     iframe{
         padding: 15px 15px;

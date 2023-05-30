@@ -10,18 +10,12 @@ main{
     #main__presentacion{
         background-color: slategrey;
         color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include flexbox(row, space-around, center);
         padding: 25px;
-        align-items: center;
     }
     .secciones{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include flexbox(column, space-around, center);
         padding-top: 80px;
-        align-items: center;
         .fondo__tarjeta{
             background-color: map-get($colores, secundario);
             border: 2px solid map-get($colores, primario);
@@ -29,13 +23,10 @@ main{
             width: 720px;
             height: 525px;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexbox(column, center, none);
             margin-bottom: 80px;
             .tarjeta{
-                display: flex;
-                flex-direction: row;
+                @include flexbox(row, none,none);
                 width: 900px;
                 height: 400px;
                 background-color: map-get($colores, secundario);
@@ -45,10 +36,7 @@ main{
                     border: 1px solid map-get($colores, primario);
                 }
                 .tarjeta__contenido{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: start;
+                    @include flexbox(column, center, start);
                     text-align:start;
                     padding-left: 60px;
                     h2{
@@ -70,6 +58,7 @@ main{
                         font-size: 20;
                         &:hover{
                             color: map-get($colores, secundario);
+                            border: 1px solid white;
                         }   
                     }                    
                 } 

@@ -3,10 +3,7 @@ footer{
     grid-area: footer;
     background-color: map-get($colores, terciario);
     font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox(row, space-between, center);
     .copiright{
         font-size: 15px;
         padding-left: 15px;

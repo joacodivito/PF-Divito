@@ -6,13 +6,10 @@
 }
 
 .form{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flexbox(row, space-between, none);
     padding: 15px;
     #formulario{
-        display: flex;
-        flex-direction: column;
+        @include flexbox (column, none, none);
         width: 50%;
         input{
             padding: 5px;
