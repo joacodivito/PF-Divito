@@ -1,6 +1,6 @@
 @media (max-width: 576px){ 
     body{
-        grid-template-rows: 80px auto 80px 210px;
+        grid-template-rows: 100px auto 200px;
     }
 
     header{ 
@@ -120,9 +120,9 @@
         }
     }
 
-    nav{
-        .marcas{
-            margin-top: -20px;
+    .marcas{
+        .marcas__lista{
+            margin-top: -19px;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;

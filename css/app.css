@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: black;
+  background-color: #1A1423;
   color: white;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 80px auto 80px 120px;
-  grid-template-areas: "header header header header header header" "main main main main main main" "nav nav nav nav nav nav" "footer footer footer footer footer footer";
+  grid-template-rows: 80px auto 120px;
+  grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
 }
 
 footer {
@@ -56,6 +56,7 @@ header {
 }
 header .header__titulo {
   padding: 1px 10px;
+  margin-bottom: 0;
 }
 header .header__titulo a {
   color: white;
@@ -69,8 +70,15 @@ header .header__menu {
   align-items: none;
   padding: 0px 15px;
   color: white;
+  margin-bottom: 0;
 }
-header .header__menu a {
+header .header__menu li {
+  border-right: 1px white solid;
+}
+header .header__menu li:last-child {
+  border-right: none;
+}
+header .header__menu li a {
   padding: 0px 15px;
   color: white;
   text-decoration: none;
@@ -84,7 +92,7 @@ main #hero {
   background-image: url(../imagenes/Wos_Estudiantes_44.jpg);
   width: 100%;
   height: 700px;
-  background-position: bottom;
+  background-position: 50% 95%;
 }
 main #main__presentacion {
   background-color: slategrey;
@@ -94,6 +102,12 @@ main #main__presentacion {
   justify-content: space-around;
   align-items: center;
   padding: 25px;
+}
+main #main__presentacion h2 {
+  margin-bottom: 0;
+}
+main #main__presentacion p {
+  margin-bottom: 0;
 }
 main .secciones {
   display: flex;
@@ -159,10 +173,26 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a:hover {
   color: gainsboro;
   border: 1px solid white;
 }
+main .marcas {
+  padding-top: 25px;
+  grid-area: nav;
+  background-color: gainsboro;
+  width: 100%;
+  height: 60px;
+}
+main .marcas .marcas__lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .marcas .marcas__lista li {
+  list-style-type: none;
+}
 
 @media (max-width: 576px) {
   body {
-    grid-template-rows: 80px auto 80px 210px;
+    grid-template-rows: 100px auto 200px;
   }
   header {
     flex-direction: column;
@@ -259,16 +289,16 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a:hover {
     width: 100%;
     margin-right: 10px;
   }
-  nav .marcas {
-    margin-top: -20px;
+  .marcas .marcas__lista {
+    margin-top: -19px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
   }
-  nav .marcas li {
+  .marcas .marcas__lista li {
     margin: 0;
   }
-  nav .marcas li img {
+  .marcas .marcas__lista li img {
     margin-left: 4px;
   }
   footer {
@@ -283,27 +313,11 @@ main .secciones .fondo__tarjeta .tarjeta .tarjeta__contenido a:hover {
     padding-top: 15px;
   }
 }
-nav {
-  padding-top: 25px;
-  grid-area: nav;
-  background-color: gainsboro;
-  width: 100%;
-}
-nav .marcas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav .marcas li {
-  list-style-type: none;
-}
-
 #hero3 {
   background-image: url(../imagenes/Ca7riel_Opera_1.jpg);
   width: 100%;
   height: 700px;
-  background-position: top;
+  background-position: 50% 18%;
 }
 
 .form {
@@ -330,10 +344,10 @@ nav .marcas li {
 }
 
 #hero4 {
-  background-image: url(../imagenes/Mustafunk_01.jpg);
+  background-image: url(../imagenes/Kapanga.jpg);
   width: 100%;
   height: 700px;
-  background-position: center;
+  background-position: 50% 38%;
 }
 
 .contenedor__imagenes {
@@ -420,7 +434,7 @@ header h1 {
   background-image: url(../imagenes/Airbag_35.jpg);
   width: 100%;
   height: 700px;
-  background-position: center;
+  background-position: 50% 36%;
 }
 
 .nosotros {
@@ -442,10 +456,10 @@ header h1 {
 }
 
 #hero5 {
-  background-image: url(../imagenes/La_Renga_11.jpg);
+  background-image: url(../imagenes/Acru_Obras_19.jpg);
   width: 100%;
   height: 700px;
-  background-position: center;
+  background-position: 50% 28%;
 }
 
 #contenido__videos {

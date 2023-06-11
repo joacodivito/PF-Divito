@@ -5,9 +5,15 @@ main{
         background-image: url(../imagenes/Wos_Estudiantes_44.jpg);
         width: 100%;  
         height: 700px;
-        background-position: bottom;
+        background-position: 50% 95%;
     }
     #main__presentacion{
+        h2{
+            margin-bottom: 0;
+        }
+        p{
+            margin-bottom: 0;
+        }
         background-color: slategrey;
         color: white;
         @include flexbox(row, space-around, center);
@@ -63,6 +69,19 @@ main{
                     }                    
                 } 
             }
+        }
+    }
+    .marcas{
+        padding-top: 25px;
+        grid-area: nav;
+        background-color: map-get($colores, secundario);
+        width: 100%;
+        height: 60px;
+        .marcas__lista{
+            @include flexbox(row, space-evenly, center);
+            li{
+                list-style-type: none;           
+            }       
         }
     }
 }
